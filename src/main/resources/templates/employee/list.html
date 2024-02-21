@@ -5,10 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<a th:href="@{/addNew}">Add new</a>
+<a th:href="@{/addnew}">Add new</a>
 <table>
     <thead>
-    <th>employeeid</th>
+    <th>employeeId</th>
     <th>employeeName</th>
     <th>birthday</th>
     <th>phoneNumber</th>
@@ -19,7 +19,6 @@
     <!--        <span th:text="${students}"></span>-->
     <tr th:each="employee:${employees}">
         <td th:text="${employee.employeeId}"></td>
-        <td th:text="${employee.employeeName}"></td>
         <td th:text="${employee.employeeName}"></td>
         <td th:text="${employee.birthday}"></td>
         <td th:text="${employee.email}"></td>
