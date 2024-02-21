@@ -9,7 +9,6 @@ import java.util.Date;
 @Table(name = "employee")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "employeeId", nullable = false)
     @NotEmpty(message = "The Employee Id Field is not empty.")
     public String employeeId;
