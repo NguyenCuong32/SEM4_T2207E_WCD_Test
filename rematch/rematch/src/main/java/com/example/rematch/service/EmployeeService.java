@@ -23,8 +23,8 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
-    public Optional<Employee> getEmployeeById(Integer id) {
-        return employeeRepostirory.findById(id);
+    public Optional<Employee> getEmployeeById(String employeeId) {
+        return employeeRepostirory.findById(employeeId);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class EmployeeService implements IEmployeeService {
     public void updateEmployee() {
     }
     @Override
-    public void deleteEmployee(Integer id) {
-        employeeRepostirory.deleteById(id);
+    public void deleteEmployee(String employeeId) {
+        employeeRepostirory.deleteById(employeeId);
     }
 }
