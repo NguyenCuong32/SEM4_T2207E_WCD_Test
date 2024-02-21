@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="235881d1-82af-4c9b-8fc8-a6d6b42e963e" name="Changes" comment="Test Pham Ha Khoa">
+      <change afterPath="$PROJECT_DIR$/HR-Manager/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/HrManagerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/java/com/ABC/HR/Manager/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/resources/templates/employee/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/resources/templates/employee/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR-Manager/src/test/java/com/ABC/HR/Manager/HrManagerApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2cg5xFq1IQWNfdv08d390ofLIPz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "PhamHaKhoa",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/WIN 10/Downloads/HR Manager/Test/SEM4_T2207E_WCD_Test"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="235881d1-82af-4c9b-8fc8-a6d6b42e963e" name="Changes" comment="" />
+      <created>1708520625184</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708520625184</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test Pham Ha Khoa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Pham Ha Khoa" />
+  </component>
+</project>
