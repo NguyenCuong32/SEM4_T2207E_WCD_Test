@@ -12,7 +12,7 @@ public class Employee {
     @Id
     @Size(max=20)
     @Column(name="employeeId")
-    public Integer employeeId;
+    public String employeeId;
 
     @NotNull
     @Column(name="employeeName")
@@ -35,7 +35,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Integer employeeId, String employeeName, Date birthday, String phoneNumber, String email) {
+    public Employee(String employeeId, String employeeName, Date birthday, String phoneNumber, String email) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.birthday = birthday;
@@ -43,11 +43,11 @@ public class Employee {
         this.email = email;
     }
 
-    public Integer getEmployeeId() {
+    public String getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(Integer employeeId) {
+    public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
 
