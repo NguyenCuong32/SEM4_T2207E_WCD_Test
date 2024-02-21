@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+    .error{color:red}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<h1>add new</h1>
+<form action="#"  th:action="@{adduser}" th:object="${student}" method="post" style="width:800px;">
+
+    <div class="form-group" >
+        <label for="exampleInputEmail1">Employee Id</label>
+        <input type="text" autofocus class="form-control" id="exampleInputEmail2" th:field="*{employeeId}" style="width:500px;" >
+        <small id="emailHelp1" class="form-text text-muted">Input Employee Id.</small>
+    </div>
+    <p th:if="${#fields.hasErrors('employeeId')}" th:errors="*{employeeId}" class="error"/>
+
+     <div class="form-group" >
+        <label for="exampleInputEmail1">Employee Name</label>
+        <input type="text" autofocus class="form-control" id="exampleInputEmail1" th:field="*{employeeName}" style="width:500px;" >
+        <small  class="form-text text-muted">Input Employee Name.</small>
+    </div>
+    <p th:if="${#fields.hasErrors('employeeName')}" th:errors="*{employeeName}" class="error"/>
+ <div class="form-group" >
+        <label for="exampleInputEmail1">Employee birthday</label>
+        <input type="text" autofocus class="form-control"   th:field="*{birthday}" style="width:500px;" >
+        <small   class="form-text text-muted">Input Employee birthday.</small>
+    </div>
+    <p th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}" class="error"/>
+ <div class="form-group" >
+        <label for="exampleInputEmail1">Employee phone Number</label>
+        <input type="text" autofocus class="form-control"   th:field="*{phoneNumber}" style="width:500px;" >
+        <small   class="form-text text-muted">Input Employee phone Number.</small>
+    </div>
+    <p th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}" class="error"/>
+ <div class="form-group" >
+        <label for="exampleInputEmail1">Employee Email</label>
+        <input type="text" autofocus class="form-control"  th:field="*{email}" style="width:500px;" >
+        <small  class="form-text text-muted">Input Employee email.</small>
+    </div>
+    <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error"/>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
