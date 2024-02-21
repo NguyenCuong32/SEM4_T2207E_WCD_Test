@@ -13,8 +13,8 @@ import java.util.Optional;
 public class EmployeeController {
     final EmployeeService employeeService;
 
-    public EmployeeController(EmployeeService studentService) {
-        this.employeeService = studentService;
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
     }
     @GetMapping("/list")
     public String EmployeeService(Model model){
