@@ -22,11 +22,7 @@
         <div class="row m-4 g-3">
             <div class="row g-3">
                 <input type="hidden" th:field="*{id}" />
-                <div class="col">
-                    <input type="text" autofocus="autofocus" th:field="*{firstName}" class="form-control" placeholder="First name" aria-label="First name">
-                </div>
-                <div class="col">
-                    <input type="text" th:field="*{lastName}" class="form-control" placeholder="Last name" aria-label="Last name">
+
             </div>
             <div class="row g-3">
                 <div class="col">
@@ -36,15 +32,12 @@
             <div>
                 <span>Erros list:</span>
                 <ul>
-                    <li th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="error"></li>
-                    <li th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="error"></li>
-                    <li th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error"></li>
-<!--                    <li th:each="field : ${#fields.errors('*')}" th:errors="${field}" class="error"></li>-->
+
                 </ul>
             </div>
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Save Student</button>
+                <button type="submit" class="btn btn-primary">Save </button>
                 <a th:href="@{/student/list}" class="btn btn-secondary">Back</a>
             </div>
         </div>
