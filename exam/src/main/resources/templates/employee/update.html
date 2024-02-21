@@ -22,9 +22,10 @@
     </div>
     <div class="mb-3">
       <label class="form-label">Birthday</label>
-      <input placeholder="Enter Birthday" type="text" autofocus="autofocus" class="form-control" th:field="*{birthday}">
+      <input placeholder="Enter Birthday" type="datetime-local" autofocus="autofocus" class="form-control" th:field="*{birthday}">
       <p th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}" class="error"></p>
     </div>
+
     <div class="mb-3">
       <label class="form-label">Phone Number</label>
       <input placeholder="Enter Phone Number" type="text" autofocus="autofocus" class="form-control" th:field="*{phone_number}">
