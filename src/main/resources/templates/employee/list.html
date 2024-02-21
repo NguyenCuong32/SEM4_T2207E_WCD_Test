@@ -8,7 +8,7 @@
 <a th:href="@{/addnew}">Add new</a>
 <table>
     <thead>
-    <th>employeeId</th>
+    <th>employeeid</th>
     <th>employeeName</th>
     <th>birthday</th>
     <th>phoneNumber</th>
@@ -18,13 +18,13 @@
     <tbody>
     <!--        <span th:text="${students}"></span>-->
     <tr th:each="employee:${employees}">
-        <td th:text="${employee.employeeId}"></td>
-        <td th:text="${employee.employeeName}"></td>
+        <td th:text="${employee.employeeid}"></td>
+        <td th:text="${employee.employeename}"></td>
         <td th:text="${employee.birthday}"></td>
         <td th:text="${employee.email}"></td>
         <td>
-            <a class ="btn btn-secondary" th:href="@{/employee/update(employeeId=${employee.employeeId})}">Edit</a>
-            <a class ="btn btn-secondary" th:href="@{/employee/delete(employeeId=${employee.employeeId})}"
+            <a class ="btn btn-secondary" th:href="@{/employee/update(employeeid=${employee.employeeid})}">Edit</a>
+            <a class ="btn btn-secondary" th:href="@{/employee/delete(employeeid=${employee.employeeid})}"
                onclick="if (!(confirm('Are you sure you want to delete this student?'))) return false" >Delete</a>
         </td>
     </tr>

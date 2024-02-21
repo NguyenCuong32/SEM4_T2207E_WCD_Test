@@ -41,13 +41,13 @@ public class EmployeeController {
         }
     }
     @GetMapping("formUpdate")
-    public String ShowFormUpdate(@RequestParam("employeeId") Integer employeeId, Model model) {
+    public String ShowFormUpdate(@RequestParam("employeeid") Integer employeeId, Model model) {
         Optional<Employee> employee = employeeService.getEmployeeById(employeeId);
         model.addAttribute("employee",employee);
         return "employee/addnew";
     }
     @GetMapping("delete")
-    public String DeleteEmployee(@RequestParam("employeeId") Integer employeeId,Model model) {
+    public String DeleteEmployee(@RequestParam("employeeid") Integer employeeId,Model model) {
         employeeService.deleteEmployee(employeeId);
         return "redirect:/employee/list";
     }

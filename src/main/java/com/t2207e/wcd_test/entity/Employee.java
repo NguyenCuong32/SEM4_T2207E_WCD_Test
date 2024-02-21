@@ -1,5 +1,6 @@
 package com.t2207e.wcd_test.entity;
 
+import jakarta.persistence.*;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,26 +14,26 @@ import java.util.Date;
 public class Employee {
     @Id
     @NotNull(message = "id cannot be null")
-    @Column(name = "employeeId")
-    public String employeeId;
+    @Column(name = "employeeid")
+    public String employeeid;
     @NotNull(message = "employeeName cannot be null")
-    @Column(name = "employeeName")
-    public String employeeName;
+    @Column(name = "employeename")
+    public String employeename;
     @NotNull(message = "birthday cannot be null")
     @Column(name = "birthday")
     public Date birthday;
     @NotNull(message = "phoneNumber cannot be null")
-    @Column(name = "phoneNumber")
-    public String phoneNumber;
+    @Column(name = "phonenumber")
+    public String phonenumber;
     @NotNull(message = "email cannot be null")
     @Column(name = "email")
     public String email;
 
-    public Employee(String employeeId, String employeeName, Date birthday, String phoneNumber, String email) {
-        this.employeeId = employeeId;
-        this.employeeName = employeeName;
+    public Employee(String employeeid, String employeename, Date birthday, String phonenumber, String email) {
+        this.employeeid = employeeid;
+        this.employeename = employeename;
         this.birthday = birthday;
-        this.phoneNumber = phoneNumber;
+        this.phonenumber = phonenumber;
         this.email = email;
     }
 
@@ -40,20 +41,20 @@ public class Employee {
 
     }
 
-    public String getEmployeeId() {
-        return employeeId;
+    public String getEmployeeid() {
+        return employeeid;
     }
 
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
+    public void setEmployeeid(String employeeid) {
+        this.employeeid = employeeid;
     }
 
-    public String getEmployeeName() {
-        return employeeName;
+    public String getEmployeename() {
+        return employeename;
     }
 
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
+    public void setEmployeename(String employeename) {
+        this.employeename = employeename;
     }
 
     public Date getBirthday() {
@@ -64,12 +65,12 @@ public class Employee {
         this.birthday = birthday;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhonenumber() {
+        return phonenumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
 
     public String getEmail() {
@@ -83,10 +84,10 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "employeeId='" + employeeId + '\'' +
-                ", employeeName='" + employeeName + '\'' +
+                "employeeid='" + employeeid + '\'' +
+                ", employeename='" + employeename + '\'' +
                 ", birthday=" + birthday +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", phonenumber='" + phonenumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
