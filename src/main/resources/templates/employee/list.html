@@ -21,6 +21,7 @@
         <td th:text="${employee.employeeid}"></td>
         <td th:text="${employee.employeename}"></td>
         <td th:text="${employee.birthday}"></td>
+        <td th:text="${employee.phonenumber}"></td>
         <td th:text="${employee.email}"></td>
         <td>
             <a class ="btn btn-secondary" th:href="@{/employee/update(employeeid=${employee.employeeid})}">Edit</a>
