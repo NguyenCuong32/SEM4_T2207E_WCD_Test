@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1>Edit a new employee</h1>
+    <div class="row align-items-start">
+        <div class="col-6">
+            <form th:action="@{/create}" method="post" th:object="${employee}">
+                <div class="mb-3">
+                    <label for="employeeId" class="form-label">employeeId</label>
+                    <input th:field="*{employeeId}" type="text" class="form-control" id="employeeId" name="employeeId" placeholder="employeeId">
+                </div>
+                <div class="mb-3">
+                    <label for="employeeName" class="form-label">employeeName</label>
+                    <input th:field="*{employeeName}" type="text" class="form-control" id="employeeName" name="employeeName" placeholder="employeeName">
+                </div>
+                <div class="mb-3">
+                    <label for="birthday" class="form-label">birthday</label>
+                    <input th:field="*{birthday}" type="date" th:format="'yyyy-MM-dd'" class="form-control" id="birthday" name="birthday" placeholder="birthday">
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">phoneNumber</label>
+                    <input th:field="*{phoneNumber}" type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="phoneNumber">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">email</label>
+                    <input th:field="*{email}" type="text" class="form-control" id="email" name="email" placeholder="email">
+                </div>
+
+                <button type="submit" class="btn btn-danger">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
