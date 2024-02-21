@@ -40,15 +40,15 @@ public class EmployeeController {
             return "redirect:/list";
         }
     }
-    @GetMapping("formUpdate")
-    public String ShowFormUpdate(@RequestParam("employeeid") Integer employeeId, Model model) {
-        Optional<Employee> employee = employeeService.getEmployeeById(employeeId);
+    @GetMapping("/update")
+    public String ShowFormUpdate(@RequestParam("employeeid") Integer employeeid, Model model) {
+        Optional<Employee> employee = employeeService.getEmployeeById(employeeid);
         model.addAttribute("employee",employee);
         return "employee/addnew";
     }
-    @GetMapping("delete")
-    public String DeleteEmployee(@RequestParam("employeeid") Integer employeeId,Model model) {
-        employeeService.deleteEmployee(employeeId);
+    @GetMapping("/delete")
+    public String DeleteEmployee(@RequestParam("employeeid") Integer employeeid,Model model) {
+        employeeService.deleteEmployee(employeeid);
         return "redirect:/employee/list";
     }
 }
