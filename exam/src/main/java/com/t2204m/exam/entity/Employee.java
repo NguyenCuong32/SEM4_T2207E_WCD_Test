@@ -21,10 +21,10 @@ import java.util.Date;
 public class Employee {
 
     @Id
-    @Column(name = "employeeId", nullable = false, length = 20)
+    @Column(name = "employee_id", length = 20)
     private String employeeId;
 
-    @Column(name = "employeeName", nullable = false, length = 64)
+    @Column(name = "employee_name", nullable = false, length = 64)
     @NotBlank(message = "Name is mandatory")
     @Size(max = 64, message = "Name must be lest than 64 characters")
     private String employeeName;
@@ -34,7 +34,7 @@ public class Employee {
     @NotNull(message = "Birthday is mandatory")
     private Date birthday;
 
-    @Column(name = "phoneNumber", nullable = false, length = 11)
+    @Column(name = "phone_number", nullable = false, length = 11)
     @NotBlank(message = "Phone Number is mandatory")
     @Size(max = 11, message = "Phone Number must be lest than 11 characters")
     private String phoneNumber;
