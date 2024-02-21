@@ -31,7 +31,7 @@ public class EmployeeController {
     @GetMapping("/list")
     public String getProducts(Model model){
 
-        var employee = employeeService.getAllEmployees();
+        var employees = employeeService.getAllEmployees();
         model.addAttribute("employees",employees);
         return "employee/index";
     }
