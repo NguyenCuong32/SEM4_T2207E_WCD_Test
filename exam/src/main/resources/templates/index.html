@@ -33,9 +33,13 @@
             <tr  th:each="employee : ${employees}">
                 <th scope="row">1</th>
                 <td th:text="${employee.employeeId}"></td>
+                <td th:text="${employee.employeeName}"></td>
                 <td th:text="${employee.birthday}"></td>
                 <td th:text="${employee.phoneNumber}"></td>
                 <td th:text="${employee.email}"></td>
+                <td>
+
+                </td>
             </tr>
             </tbody>
         </table>
