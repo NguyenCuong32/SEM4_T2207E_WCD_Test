@@ -10,7 +10,6 @@ import org.springframework.format.annotation.DateTimeFormat;
     @Table(name = "employee")
     public  class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="employeeid")
     public String employeeId;
     @Column(name = "employeename")

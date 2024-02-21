@@ -42,7 +42,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/save")
-    public String SaveStudent(@Valid @ModelAttribute("student") Employee employee, BindingResult bindingResult) {
+    public String SaveStudent(@Valid @ModelAttribute("employee") Employee employee, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "employee/addNew";
         } else {
