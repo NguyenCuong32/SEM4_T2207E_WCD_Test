@@ -46,11 +46,12 @@ public class EmployeeService implements IEmployeeService{
 
     @Override
     public Employee updateEmployee(Employee employee) {
-        return null;
+        return employeeRepository.save(employee);
     }
 
     @Override
     public void deleteEmployee(String employeeId) {
+        employeeRepository.deleteById(employeeId);
 
     }
 }
