@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/addNew}">Add new</a>
+<table>
+    <thead>
+    <th>employeeid</th>
+    <th>employeeName</th>
+    <th>birthday</th>
+    <th>phoneNumber</th>
+    <th>email</th>
+    <th>actions</th>
+    </thead>
+    <tbody>
+    <!--        <span th:text="${students}"></span>-->
+    <tr th:each="employee:${employees}">
+        <td th:text="${employee.employeeId}"></td>
+        <td th:text="${employee.employeeName}"></td>
+        <td th:text="${employee.employeeName}"></td>
+        <td th:text="${employee.birthday}"></td>
+        <td th:text="${employee.email}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
